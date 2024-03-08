@@ -1,10 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv')
+const path = require('path')
 
 const app = express();
 const PORT = 3000;
 dotenv.config();
+
+const __dirname = path.resolve();
 
 app.use(express.json());
 
@@ -110,6 +113,11 @@ app.get('/api/reviews', async (req, res) => {
   }
 });
 
+app.use(express.static(path.join(__dirname, '/client/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+})
 
 
 app.listen(PORT, () => {
