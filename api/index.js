@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 dotenv.config();
 
-const __dirname = path.resolve();
+__dirname = path.resolve();
 
 app.use(express.json());
 
