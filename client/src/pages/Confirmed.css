@@ -1,0 +1,403 @@
+.image-39 {
+  position: absolute;
+  top: 0;
+  left: -437px;
+  width: 812px;
+  height: 812px;
+}
+.ta-da {
+  margin: 0;
+}
+.ta-da-booking-confirmed-container {
+  top: 178px;
+  left: 73px;
+  line-height: 34.8px;
+  color: rgba(0, 0, 0, 0.9);
+}
+.div28,
+.ta-da-booking-confirmed-container,
+.weve-sent-you-container {
+  position: absolute;
+  letter-spacing: 0.05em;
+}
+.weve-sent-you-container {
+  top: 258px;
+  left: 50px;
+  font-size: var(--font-size-sm);
+  line-height: 21px;
+  color: #372e2e;
+}
+.div28 {
+  top: 123px;
+  left: 168px;
+  font-size: 40px;
+  line-height: 34.8px;
+}
+.iconclose,
+.iconshare {
+  position: absolute;
+  top: 59px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.iconshare {
+  left: 331px;
+}
+.booing-confirmed-card-child {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  width: 315px;
+  height: 389px;
+}
+.booing-confirmed-card-item {
+  position: absolute;
+  top: 287px;
+  left: 0;
+  background-color: var(--global-white);
+  filter: blur(30px);
+  width: 320px;
+  height: 5px;
+  opacity: 0.2;
+}
+.image-38-icon {
+  position: absolute;
+  top: 310px;
+  left: 238px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.booing-confirmed-card-inner,
+.vector-icon {
+  position: absolute;
+  top: 137.5px;
+  left: 23px;
+  width: 275px;
+  height: 1px;
+  opacity: 0.1;
+}
+.vector-icon {
+  top: 213.5px;
+}
+.customer,
+.deposit,
+.restaurant2,
+.seats2,
+.time {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.3;
+  padding: -2px;
+}
+.customer,
+.deposit,
+.seats2,
+.time {
+  top: 158px;
+  left: 250px;
+}
+.customer,
+.deposit,
+.seats2 {
+  left: 23px;
+}
+.customer,
+.deposit {
+  top: 234px;
+  left: 20px;
+}
+.deposit {
+  left: 231px;
+}
+.opera-house-mumbaimaharashtr-container {
+  position: absolute;
+  top: 67px;
+  left: 23px;
+  letter-spacing: 0.05em;
+  line-height: 16.8px;
+  opacity: 0.6;
+}
+.khana-khazana {
+  position: absolute;
+  top: 45px;
+  left: 23px;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.date {
+  top: 158px;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.date,
+.div29 {
+  position: absolute;
+  left: 129px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.am,
+.div29,
+.div30 {
+  top: 177px;
+  font-size: var(--font-size-sm);
+}
+.am {
+  position: absolute;
+  left: 250px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.div30 {
+  left: 23px;
+}
+.div30,
+.div31,
+.krishil-sheth,
+.order-id {
+  position: absolute;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.krishil-sheth {
+  top: 253px;
+  left: 23px;
+  font-size: var(--font-size-sm);
+}
+.div31,
+.order-id {
+  left: 0;
+}
+.order-id {
+  top: 0;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.div31 {
+  top: 19px;
+  font-size: var(--font-size-sm);
+}
+.order-id-parent {
+  position: absolute;
+  top: 322px;
+  left: 23px;
+  width: 125px;
+  height: 36px;
+}
+.paid {
+  position: absolute;
+  top: 253px;
+  left: 220px;
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.booing-confirmed-card {
+  position: absolute;
+  top: 339px;
+  left: 27px;
+  width: 320px;
+  height: 389px;
+  text-align: left;
+  font-size: var(--small-12px-regular-size);
+  color: var(--global-white);
+}
+.frame12,
+.menu-bar-child11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu-bar-child11 {
+  border-radius: var(--br-3xl) var(--br-3xl) 0 0;
+  background-color: var(--global-white);
+  box-shadow: 0 0 50px rgba(90, 108, 234, 0.1);
+  width: 375px;
+  height: 74px;
+}
+.frame12 {
+  border-radius: var(--br-xs) var(--br-xs) 0 0;
+  background: linear-gradient(98.81deg, #53e88b, #15be77);
+  width: 110.92px;
+  height: 44px;
+  opacity: 0.1;
+}
+.iconlybulkhome7 {
+  position: absolute;
+  height: 54.55%;
+  width: 22.86%;
+  top: 22.73%;
+  right: 60.95%;
+  bottom: 22.73%;
+  left: 16.19%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.home7 {
+  position: absolute;
+  top: 16px;
+  left: 55.99px;
+  line-height: 131.02%;
+  display: inline-block;
+  width: 36.97px;
+}
+.icon-home-active7 {
+  position: absolute;
+  top: 15px;
+  left: 21.13px;
+  width: 110.92px;
+  height: 44px;
+  font-size: var(--small-12px-regular-size);
+  color: var(--color-gray-300);
+}
+.iconlybulkchat7 {
+  position: absolute;
+  height: 32.43%;
+  width: 6.76%;
+  top: 33.78%;
+  right: 10.7%;
+  bottom: 33.78%;
+  left: 82.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+}
+.menu-bar-child12 {
+  position: absolute;
+  top: 23px;
+  left: 325.35px;
+  border-radius: 50%;
+  background-color: var(--color-tomato);
+  border: 1px solid var(--global-white);
+  box-sizing: border-box;
+  width: 13.73px;
+  height: 13px;
+}
+.div32 {
+  position: absolute;
+  top: 25px;
+  left: 260.92px;
+  line-height: 131.02%;
+  display: inline-block;
+  width: 5.28px;
+}
+.iconlybulkbuy7 {
+  position: absolute;
+  height: 92.31%;
+  width: 85.71%;
+  top: 7.69%;
+  right: 14.29%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+}
+.notification-cart-child5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: var(--color-tomato);
+  border: 1px solid var(--global-white);
+  box-sizing: border-box;
+  width: 13.73px;
+  height: 13px;
+}
+.div33 {
+  position: absolute;
+  top: 2px;
+  left: 4.23px;
+  line-height: 131.02%;
+  display: inline-block;
+  width: 5.28px;
+}
+.notification-cart7 {
+  position: absolute;
+  top: 0;
+  left: 15.85px;
+  width: 13.73px;
+  height: 14px;
+}
+.icon-cart7,
+.icon-profile7 {
+  position: absolute;
+  height: 35.14%;
+  width: 7.89%;
+  top: 31.08%;
+  right: 29.01%;
+  bottom: 33.78%;
+  left: 63.1%;
+}
+.icon-profile7 {
+  height: 27.03%;
+  width: 4.51%;
+  top: 36.49%;
+  right: 47.33%;
+  bottom: 36.49%;
+  left: 48.17%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  opacity: 0.5;
+}
+.menu-bar7 {
+  position: absolute;
+  top: 737px;
+  left: 0;
+  width: 375px;
+  height: 74px;
+  text-align: left;
+  font-size: var(--font-size-4xs);
+  color: var(--global-white);
+  font-family: var(--font-font);
+}
+.battery-icon {
+  position: absolute;
+  width: 6.49%;
+  top: 16.33px;
+  right: 3.91%;
+  left: 89.6%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 11.33px;
+}
+.wifi-icon {
+  position: relative;
+  width: 15.27px;
+  height: 10.97px;
+}
+.mobile-signal-icon {
+  position: relative;
+  width: 17px;
+  height: 10.67px;
+}
+.div34 {
+  position: absolute;
+  top: 13px;
+  left: 8.27%;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.navigationstatus-barlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #32b768;
+  width: 375px;
+  height: 44px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-mini);
+}
