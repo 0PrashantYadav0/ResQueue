@@ -21,18 +21,38 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Define User Schema
 const userSchema = new mongoose.Schema({
-  firstname: String,
-  lastname: String,
-  email: String,
-  phoneNumber: String
+  firstname: {
+    type: String,
+    required: true,
+  },
+  lastname: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  phoneNumber: {
+    type: String,
+    required: true,
+  },
+  hotelId: {
+    type: String,
+    required: true,
+  },
 });
 const UserIn = mongoose.model('UserIn', userSchema);
 
 // Add User Route
 app.post('/api/users', async (req, res) => {
   try {
-    const { firstname, lastname, phoneNumber, email } = req.body;
-    const newUser = new UserIn({ firstname, lastname, phoneNumber, email });
+    const { firstname, lastname, phoneNumber, email, hotelId } = req.body;
+    //check every field is filled
+    if (!firstname || !lastname || !phoneNumber || !email || !hotelId) {
+      return res.status(400).json({ message: 'All fields are required' });
+    }
+    const newUser = new UserIn({ firstname, lastname, phoneNumber, email, hotelId });
     await newUser.save();
     res.status(201).json(newUser);
   } catch (error) {
@@ -86,6 +106,10 @@ const reviewSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  hotelId: {
+    type: String,
+    required: true,
+  },
 });
 
 // Create Review model
@@ -94,8 +118,8 @@ const Review = mongoose.model('Review', reviewSchema);
 // Add Review Route
 app.post('/api/reviews', async (req, res) => {
   try {
-    const { name, email, message, rating } = req.body;
-    const newReview = new Review({ name, email, message, rating });
+    const { name, email, message, rating, hotelId } = req.body;
+    const newReview = new Review({ name, email, message, rating, hotelId });
     await newReview.save();
     res.status(201).json(newReview);
   } catch (error) {
@@ -104,9 +128,10 @@ app.post('/api/reviews', async (req, res) => {
 });
 
 // Get Reviews Route
-app.get('/api/reviews', async (req, res) => {
+app.get('/api/reviews/:hotelId', async (req, res) => {
   try {
-    const reviews = await Review.find();
+    const hotelId = req.params.hotelId;
+    const reviews = await Review.find({ hotelId: hotelId });
     res.status(200).json(reviews);
   } catch (error) {
     res.status(500).json({ error: error.message });

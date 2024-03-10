@@ -54,6 +54,7 @@ const Dashboard = () => {
             <li key={user._id} className="mb-2">
               <div className="flex justify-between">
                 <div className='flex gap-4'>
+                  <p>From : {user.hotelId}</p>
                   <p className="font-bold">{user.firstname} {user.lastname}</p>
                   <p>{user.email}</p>
                   <p>{user.phoneNumber}</p>

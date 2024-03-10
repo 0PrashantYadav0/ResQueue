@@ -3,12 +3,16 @@ import App from './App.jsx'
 import ReactDOM from 'react-dom/client';
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Hotelmodel from './pages/Hotelmodel.jsx'
 import Login from './pages/Login.jsx'
 import Confirmation from './pages/Confirmation.jsx'
 import Reservation from './pages/Reservation.jsx'
 import Confirmed from './pages/Confirmed.jsx'
 import Dashboard from './pages/DashBoard.jsx'
+import Hotels from './pages/Hotels.jsx';
+import Amar from './pages/Amar.jsx';
+import Cfc from './pages/Cfc.jsx';
+import Marineroom from './pages/Marineroom.jsx';
+import RoyalCafe from './pages/RoyalCafe.jsx';
 
 const router = createBrowserRouter([
   {
@@ -16,11 +20,27 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
         {
-            path: "/amar",
-            element: <Hotelmodel />,
+            path: "/",
+            element: <Hotels/>,
         },
         {
-            path: "/reservation",
+            path: "/amar",
+            element: <Amar/>
+        },
+        {
+            path: "/cfc",
+            element: <Cfc/>,
+        },
+        {
+            path: "/marineroom",
+            element: <Marineroom/>,
+        },
+        {
+            path: "/royalcafe",
+            element: <RoyalCafe/>,
+        },
+        {
+            path: "/reservation/:id",
             element: <Reservation />,
         },
         {

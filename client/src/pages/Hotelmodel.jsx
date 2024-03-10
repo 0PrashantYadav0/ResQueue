@@ -10,7 +10,8 @@ import FeedbackForm from "../components/FeedBack";
 import axios from "axios";
 import { BsStarFill } from "react-icons/bs";
 
-function Hotelmodel() {
+function Hotelmodel({hotelDetails}) {
+
   const [count, setCount] = useState(0);
   const [reviews, setReviews] = useState([]);
 
@@ -23,7 +24,7 @@ function Hotelmodel() {
 
   const redirectToReservation = () => {
     if (count > 0) {
-      window.location.href = "/reservation";
+      window.location.href = `/reservation/${hotelDetails.hotelId}`;
     }
   };
 
@@ -46,7 +47,7 @@ function Hotelmodel() {
 
   const fetchReviews = async () => {
     try {
-      const reviews = await axios.get("/api/reviews");
+      const reviews = await axios.get(`/api/reviews/${hotelDetails.hotelId}`);
       setReviews(reviews.data);
       console.log(reviews.data);
     } catch (error) {
@@ -62,7 +63,7 @@ function Hotelmodel() {
       <div className="px-12">
         <div className="relative -z-10">
           <img
-            src="https://lh3.googleusercontent.com/p/AF1QipNT0ZILrhHHN8Q89NU_spyk9jsBFm4-FLwI2KOx=s1360-w1360-h1020"
+            src={hotelDetails.image}
             alt="photo"
             className="w-full h-[500px]"
           />
@@ -75,24 +76,23 @@ function Hotelmodel() {
             <img src={location} alt="" />
           </div>
           <div>
-            <p className="text-2xl px-6">Amar , Veg Restaurant</p>
-            <div className="flex px-6 justify-between pb-2 pt-3">
-              <div className="flex">
+            <p className="text-2xl px-6">{hotelDetails.name}</p>
+            <div className="flex justify-evenly">
+            <div className="flex justify-evenly w-1/3">
+              <div className="flex justify-center items-center">
                 <img src={star4} alt="" />
-                <p className="text-gray-400 px-1">4.8 star</p>
+                <p className="text-gray-400 px-1">{hotelDetails.rating}</p>
               </div>
-              <div className="flex">
+              <div className="flex justify-center items-center">
                 <img src={ordericon} alt="" />
-                <p className="text-gray-400 px-1">2000+ order</p>
+                <p className="text-gray-400 px-1">{hotelDetails.orders}</p>
               </div>
             </div>
-            <div>
+            <div className="w-2/3">
               <p className="p-6 text-sm">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
-                explicabo tempora nam consectetur quisquam animi eius, voluptate
-                unde maxime odio ex magni id nostrum sed nobis porro similique
-                quae? Molestias!
+               {hotelDetails.description}
               </p>
+            </div>
             </div>
           </div>
           <div className="flex p-6 justify-between md:justify-evenly">
@@ -138,7 +138,7 @@ function Hotelmodel() {
               <div className="flex gap-2 p-1">{RenderStars(review.rating)}</div>
             </div>
           ))}
-          <FeedbackForm />
+          <FeedbackForm hotelId={hotelDetails.hotelId}/>
         </div>
       </div>
     </div>

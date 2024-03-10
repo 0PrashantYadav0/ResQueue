@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { BsStarFill, BsStar } from 'react-icons/bs';
 
-const FeedbackForm = () => {
+const FeedbackForm = ({hotelId}) => {
   const [feedbackData, setFeedbackData] = useState({
+    hotelId: hotelId,
     name: '',
     email: '',
     message: '',
@@ -25,12 +26,13 @@ const FeedbackForm = () => {
       const res = await axios.post('/api/reviews', feedbackData);
       console.log(res);
       setFeedbackData({
+        hotelId: hotelId,
         name: '',
         email: '',
         message: '',
         rating: 0,
-      })
-      window.location.href = '/amar';
+      });
+      window.location.reload();
     } catch (error) {
       console.log(error)
     }

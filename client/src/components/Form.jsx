@@ -1,27 +1,39 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Form = () => {
+const Form = ({hotelId}) => {
   const [formData, setFormData] = useState({
+    hotelId: hotelId,
     firstname: '',
     lastname: '',
     phoneNumber: '',
     email: '',
   });
-
+  console.log(formData)
+  const [error, setError] = useState()
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData)
     try {
+      setError(null)
+      //check all fields are filled
+      for (const key in formData) {
+        if (!formData[key]) {
+          return setError('All fields are required')
+        }
+      }
       const response = await axios.post('/api/users', formData);
       console.log(response);
       window.location.href = '/confirmation';
     } catch (error) {
       console.error('Error updating user profile:', error);
+      setError(error.message)
     }
   };
 
@@ -123,6 +135,7 @@ const Form = () => {
           >
             Next
           </button>
+          <p className='text-red-500'>{error}</p>
         </div>
       </form>
     </div>
