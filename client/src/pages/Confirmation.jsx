@@ -8,13 +8,15 @@ function Confirmation() {
   const [checkState, setCheckState] = React.useState(true)
   const bgThemeReservation = checkState ? 'bg-green-700 text-white' : 'bg-white text-green-700'
   const bgThemeQueue = checkState ? 'bg-white text-green-700' : 'bg-green-700 text-white'
+  const path = window.location.pathname;
+  const parts = path.split("/");
   return (
     <div>
     <div className='border-2 border-gray-500 inline-block rounded-full mx-6 my-4 text-2xl'>
       <button onClick={()=>(setCheckState(true))} className={`px-6 py-4 rounded-full border-2 ${bgThemeReservation}`}>Reservation</button>
       <button onClick={()=>(setCheckState(false))} className={`px-6 py-4 rounded-full border-2 ${bgThemeQueue}`}>Queue</button>
     </div>
-      <Hotel/>
+      <Hotel hotelId={parts[2]}/>
       {checkState ? 
       <div className='flex flex-wrap'>
       {timeList.map((time, index) => (

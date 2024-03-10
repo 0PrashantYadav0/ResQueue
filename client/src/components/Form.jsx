@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const Form = ({hotelId}) => {
+  const [user , setUser] = useState({})
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     hotelId: hotelId,
     firstname: '',
@@ -9,7 +11,6 @@ const Form = ({hotelId}) => {
     phoneNumber: '',
     email: '',
   });
-  console.log(formData)
   const [error, setError] = useState()
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,8 +20,8 @@ const Form = ({hotelId}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData)
     try {
+      setLoading(true)
       setError(null)
       //check all fields are filled
       for (const key in formData) {
@@ -29,11 +30,14 @@ const Form = ({hotelId}) => {
         }
       }
       const response = await axios.post('/api/users', formData);
-      console.log(response);
-      window.location.href = '/confirmation';
+      localStorage.setItem('user', JSON.stringify(formData));
+      setUser(response)
+      window.location.href = "/confirmation/"+formData.hotelId;
     } catch (error) {
       console.error('Error updating user profile:', error);
       setError(error.message)
+    }finally{
+      setLoading(false)
     }
   };
 
@@ -133,7 +137,7 @@ const Form = ({hotelId}) => {
             className="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline w-full"
             type="submit"
           >
-            Next
+            {loading ? 'Loading...' : 'Reserve'}
           </button>
           <p className='text-red-500'>{error}</p>
         </div>

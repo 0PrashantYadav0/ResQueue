@@ -7,8 +7,13 @@ import iconclose from "../assets/iconclose.svg"
 import rect from "../assets/rectangle-11.svg"
 
 function Confirmed() {
+  const date = new Date();
+  //get user from localstorage
+  const user = JSON.parse(localStorage.getItem('user'));
+  console.log(user)
   return (
-    <div class="ticket-confirmed">
+    <div className='maindiv'>
+      <div class="ticket-confirmed">
       <div class="image-39"></div>
       <div class="ta-da-booking-confirmed-container">
         <p class="ta-da">Ta-da!</p>
@@ -50,12 +55,12 @@ function Confirmed() {
           <p class="ta-da">Opera House,</p>
           <p class="ta-da">Mumbai,Maharashtra.</p>
         </div>
-        <div class="khana-khazana">Amar , Veg Restaurant</div>
+        <div class="khana-khazana">{user?.hotelId}</div>
         <div class="date">Date</div>
-        <div class="div29">02-02-23</div>
-        <div class="am">11:00 am</div>
+        <div class="div29">{date.getDay()}</div>
+        <div class="am">{date.getHours()}</div>
         <div class="div30">4</div>
-        <div class="krishil-sheth">Krishil Sheth</div>
+        <div class="krishil-sheth">{user.firstname+ " " + user.lastname}</div>
         <div class="order-id-parent">
           <div class="order-id">Order id</div>
           <div class="div31">01672721252926</div>
@@ -63,6 +68,7 @@ function Confirmed() {
         <div class="paid">₹ 500 Paid</div>
       </div>
   
+    </div>
     </div>
   )
 }

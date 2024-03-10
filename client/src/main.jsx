@@ -48,7 +48,7 @@ const router = createBrowserRouter([
             element: <Login />,
         },
         {
-            path: "/confirmation",
+            path: "/confirmation/:id",
             element: <Confirmation />,
         },
         {

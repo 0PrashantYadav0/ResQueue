@@ -1,3 +1,9 @@
+.maindiv{
+  position: relative;
+  top: -20px;
+  left: 400px;
+
+}
 .image-39 {
   position: absolute;
   top: 0;
