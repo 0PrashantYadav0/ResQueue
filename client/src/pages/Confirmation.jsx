@@ -18,7 +18,7 @@ function Confirmation() {
     </div>
       <Hotel hotelId={parts[2]}/>
       {checkState ? 
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap p-8'>
       {timeList.map((time, index) => (
         <TimeSlot key={index} time={time} />
       )
