@@ -65,17 +65,19 @@ function Hotelmodel({hotelDetails}) {
           <img
             src={hotelDetails.image}
             alt="photo"
-            className="w-full h-[500px]"
+            className="w-full h-[500px] rounded-full"
           />
         </div>
-        <div className="bg-white rounded-t-3xl left-0 w-full relative -top-[200px]">
-          <div className="flex justify-between px-6 py-12">
+        <div className="bg-white rounded-t-3xl left-0 w-full relative -top-[200px] px-12 flex flex-col  justify-center">
+          <div className="flex gap-12 px-6 py-12">
             <button className="bg-green-100 text-green-700 px-3 py-2 rounded-2xl">
               popular
             </button>
             <img src={location} alt="" />
           </div>
-          <div>
+          
+          <div className="flex">
+          <div className="w-1/2">
             <p className="text-2xl px-6">{hotelDetails.name}</p>
             <div className="flex justify-evenly">
             <div className="flex justify-evenly w-1/3">
@@ -95,7 +97,7 @@ function Hotelmodel({hotelDetails}) {
             </div>
             </div>
           </div>
-          <div className="flex p-6 justify-between md:justify-evenly">
+          <div className="flex gap-12 w-1/2">
             <div>
               <img src={order} alt="" className="w-[100px]" />
               <p className="text-center">Reservation</p>
@@ -106,6 +108,7 @@ function Hotelmodel({hotelDetails}) {
               <p className="text-center">Queue</p>
               <p className="text-center text-sm text-gray-600">Available</p>
             </div>
+          </div>
           </div>
           <p className="text-2xl font-semibold px-6">Reservations For?</p>
           <div className="md:flex md:m-6">
