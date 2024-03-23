@@ -14,13 +14,7 @@ function Hotels() {
               <div class="h-1 w-20 bg-indigo-500 rounded"></div>
             </div>
             <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
-              tempora exercitationem provident fugiat autem ipsa eum quae sequi
-              voluptate laborum maxime, vel quas laboriosam rerum doloremque
-              repellendus culpa reprehenderit sint? Soluta beatae totam ab iure
-              reiciendis. Aliquam ut accusamus ex corporis, dicta soluta eos
-              libero, reprehenderit, fuga assumenda inventore. Est, consequuntur
-              iure! Illo vel quos sed doloribus voluptatibus aperiam aliquam.
+            From cozy cafes serving artisanal brews to upscale bistros boasting Michelin-starred fare, our collection showcases the finest establishments where food becomes an art form and dining becomes an unforgettable adventure. Whether you're craving international flavors or seeking local delicacies, our list of favorite restaurants promises to satisfy your culinary desires and elevate your dining escapades to new heights. Embark on a culinary odyssey and let your taste buds guide you to culinary bliss at our recommended dining destinations.
             </p>
           </div>
           <div class="flex flex-wrap -m-4">
@@ -39,7 +33,7 @@ function Hotels() {
                     Amar
                   </h2>
                   <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Amar Restaurant beckons discerning diners with its enticing blend of culinary artistry and warm hospitality.
                   </p>
                 </div>
               </Link>
@@ -59,7 +53,7 @@ function Hotels() {
                     Marine Room
                   </h2>
                   <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  The Marineroom epitomizes seaside dining at its finest, offering guests a journey with a breathtaking oceanic backdrop. 
                   </p>
                 </div>
               </Link>
@@ -79,7 +73,7 @@ function Hotels() {
                     Royal cafe
                   </h2>
                   <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Royal Cafe exudes timeless elegance and culinary finesse, inviting guests into a realm of regal dining experiences.
                   </p>
                 </div>
               </Link>
@@ -99,7 +93,7 @@ function Hotels() {
                     Cfc
                   </h2>
                   <p class="leading-relaxed text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  CFC epitomizes seaside dining at its finest, offering guests a journey with a breathtaking oceanic backdrop.
                   </p>
                 </div>
               </Link>

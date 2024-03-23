@@ -9,7 +9,7 @@ function Marineroom() {
     rating: 4.2,
     orders: 4000,
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos explicabo tempora nam consectetur quisquam animi eius, voluptate unde maxime odio ex magni id nostrum sed nobis porro similique quae? Molestias!",
+     "The Marineroom epitomizes seaside dining at its finest, offering guests an unparalleled culinary journey with a breathtaking oceanic backdrop. Situated on the picturesque coastline, this esteemed establishment captures the essence of coastal living, blending fresh, locally sourced ingredients with innovative culinary techniques. From delectable seafood delights to gourmet land-based dishes, each creation is a masterpiece crafted with precision and passion. The ambiance of the Marineroom is equally enchanting, with panoramic views of the azure waters creating a serene and idyllic atmosphere. Whether savoring a romantic dinner for two or hosting a special celebration, the Marineroom promises an unforgettable dining experience that celebrates the beauty of the sea and the artistry of gastronomy."
   };
   return (
     <>

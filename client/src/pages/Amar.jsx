@@ -11,7 +11,7 @@ function Amar() {
     rating: 4.8,
     orders: 2000,
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos explicabo tempora nam consectetur quisquam animi eius, voluptate unde maxime odio ex magni id nostrum sed nobis porro similique quae? Molestias!",
+      "Amar Restaurant beckons discerning diners with its enticing blend of culinary artistry and warm hospitality. Situated in a prime location, this gastronomic haven offers a diverse menu that celebrates the rich tapestry of flavors from around the world. From fragrant Indian spices to contemporary international fare, Amar Restaurant delights patrons with meticulously crafted dishes that captivate the palate. With its inviting ambiance, attentive service, and commitment to culinary excellence, Amar Restaurant is the perfect destination for memorable dining experiences and cherished moments with loved ones.",
   };
 
   if (!hotelDetail) {

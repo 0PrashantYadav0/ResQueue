@@ -24,6 +24,7 @@ function Hotelmodel({hotelDetails}) {
 
   const redirectToReservation = () => {
     if (count > 0) {
+      localStorage.setItem("hotel",JSON.stringify(hotelDetails));
       window.location.href = `/reservation/${hotelDetails.hotelId}`;
     }
   };
@@ -126,7 +127,7 @@ function Hotelmodel({hotelDetails}) {
                 className={`w-full  rounded-xl py-4 ${styleForButton}`}
                 onClick={redirectToReservation}
               >
-                Check Reservations
+                Check Reservations 
               </button>
             </div>
           </div>
