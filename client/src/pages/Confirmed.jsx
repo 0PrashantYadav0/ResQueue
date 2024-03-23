@@ -65,7 +65,7 @@ function Confirmed() {
           <div class="order-id">Order id</div>
           <div class="div31">01672721252926</div>
         </div>
-        <div class="paid">₹ 500 Paid</div>
+        <div class="paid">₹ 5 Paid</div>
       </div>
   
     </div>
